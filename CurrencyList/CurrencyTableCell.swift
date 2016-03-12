@@ -18,7 +18,8 @@ class CurrencyTableCell: UITableViewCell {
         didSet {
             name.text = NSLocale.currentLocale().displayNameForKey(NSLocaleCountryCode, value: currency.countryCode)
             flag.image = UIImage(named: currency.countryCode)
-            currencyCode.text = "\(currency.currencyCode) \(currency.currencySymbol) "
+            currencyCode.text = currency.currencyCode
+            currencySymbol.text = currency.currencySymbol
         }
     }
     

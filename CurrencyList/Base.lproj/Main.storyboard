@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-3g-JmU">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="120" y="318" width="134" height="30"/>
+                                <state key="normal" title="Show Currency List"/>
                                 <connections>
                                     <segue destination="6nl-cU-9i5" kind="show" id="J27-cA-maq"/>
                                 </connections>
@@ -58,11 +58,17 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-UI-Agu">
                                             <rect key="frame" x="8" y="6" width="32" height="32"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="32" id="hQ7-EV-UTc"/>
-                                                <constraint firstAttribute="height" constant="32" id="zHS-2O-Txi"/>
+                                                <constraint firstAttribute="height" constant="32" id="heH-iO-Vib"/>
+                                                <constraint firstAttribute="width" constant="32" id="nQ2-wq-5YK"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSR-ie-Pha">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jho-9G-wxo">
+                                            <rect key="frame" x="325" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSR-ie-Pha">
                                             <rect key="frame" x="275" y="14" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -80,10 +86,14 @@
                                         <constraint firstItem="Xa5-UI-Agu" firstAttribute="leading" secondItem="Yg9-2U-wCc" secondAttribute="leadingMargin" id="8Gw-Ha-Lve"/>
                                         <constraint firstItem="F7J-jt-Szj" firstAttribute="leading" secondItem="Xa5-UI-Agu" secondAttribute="trailing" constant="8" id="k9C-AQ-8Dn"/>
                                         <constraint firstItem="Xa5-UI-Agu" firstAttribute="centerY" secondItem="Yg9-2U-wCc" secondAttribute="centerY" id="le5-ig-DsZ"/>
+                                        <constraint firstItem="jho-9G-wxo" firstAttribute="trailing" secondItem="Yg9-2U-wCc" secondAttribute="trailingMargin" id="mJy-6P-BW5"/>
+                                        <constraint firstItem="jho-9G-wxo" firstAttribute="leading" secondItem="OSR-ie-Pha" secondAttribute="trailing" constant="8" id="n9l-MH-Cai"/>
+                                        <constraint firstItem="jho-9G-wxo" firstAttribute="centerY" secondItem="Yg9-2U-wCc" secondAttribute="centerY" id="wrI-yb-Xeg"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="currencyCode" destination="OSR-ie-Pha" id="nkE-FP-uMD"/>
+                                    <outlet property="currencySymbol" destination="jho-9G-wxo" id="Ih1-vp-HK8"/>
                                     <outlet property="flag" destination="Xa5-UI-Agu" id="h9D-lW-fXX"/>
                                     <outlet property="name" destination="F7J-jt-Szj" id="NNu-Y4-s7L"/>
                                 </connections>
