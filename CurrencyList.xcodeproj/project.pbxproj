@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB54218D1C94876C00ADEEBD /* animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB54218C1C94876C00ADEEBD /* animated.gif */; };
 		ABE99D211C944F4300FF4704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE99D201C944F4300FF4704 /* AppDelegate.swift */; };
 		ABE99D231C944F4300FF4704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE99D221C944F4300FF4704 /* ViewController.swift */; };
 		ABE99D261C944F4300FF4704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE99D241C944F4300FF4704 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB54218C1C94876C00ADEEBD /* animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animated.gif; sourceTree = "<group>"; };
 		ABE99D1D1C944F4300FF4704 /* CurrencyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE99D201C944F4300FF4704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE99D221C944F4300FF4704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				ABE99D351C94516700FF4704 /* CurrencyTableViewController.swift */,
 				ABE99D241C944F4300FF4704 /* Main.storyboard */,
 				ABE99D271C944F4300FF4704 /* Assets.xcassets */,
+				AB54218C1C94876C00ADEEBD /* animated.gif */,
 				ABE99D291C944F4300FF4704 /* LaunchScreen.storyboard */,
 				ABE99D2C1C944F4300FF4704 /* Info.plist */,
 				ABE99D331C94509A00FF4704 /* currency.plist */,
@@ -142,6 +145,7 @@
 				ABE99D281C944F4300FF4704 /* Assets.xcassets in Resources */,
 				ABE99D261C944F4300FF4704 /* Main.storyboard in Resources */,
 				ABE99D341C94509A00FF4704 /* currency.plist in Resources */,
+				AB54218D1C94876C00ADEEBD /* animated.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 				ABE99D311C944F4300FF4704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
